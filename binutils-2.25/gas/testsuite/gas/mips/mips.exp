@@ -474,6 +474,9 @@ mips_arch_create mips16	32	{}	{} \
 			{ -march=mips1 -mips16 } { -mmips:16 }
 mips_arch_create micromips 64	mips64r2 {} \
 			{ -march=mips64r2 -mmicromips } {}
+mips_arch_create jz4740	32	mips2	{} \
+			{ -march=mips32 -mtune=mips32 -mmxu } { -mmips:isa32 } \
+			{ mipsjz4740el-*-* }
 mips_arch_create r3000 	32	mips1	{} \
 			{ -march=r3000 -mtune=r3000 } { -mmips:3000 }
 mips_arch_create r3900 	32	mips1	{ gpr_ilocks } \

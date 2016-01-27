@@ -437,6 +437,7 @@ ALL_64_EMULATION_SOURCES = \
 	eelf32ebmip.c \
 	eelf32ebmipvxworks.c \
 	eelf32elmip.c \
+	eelf32elmipds2.c \
 	eelf32elmipvxworks.c \
 	eelf32l4300.c \
 	eelf32lmip.c \
@@ -1019,6 +1020,11 @@ eelf32elmip.c: $(srcdir)/emulparams/elf32elmip.sh \
   $(srcdir)/emulparams/elf32lmip.sh $(srcdir)/emulparams/elf32bmip.sh \
   $(ELF_DEPS) $(srcdir)/emultempl/mipself.em $(srcdir)/scripttempl/elf.sc \
   ${GEN_DEPENDS}
+
+eelf32elmipds2.c: $(srcdir)/emulparams/elf32elmipds2.sh \
+  $(srcdir)/emulparams/elf32elmip.sh $(srcdir)/emulparams/elf32lmip.sh \
+  $(srcdir)/emulparams/elf32bmip.sh $(ELF_DEPS) $(srcdir)/emultempl/mipself.em \
+  $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
 
 eelf32elmipvxworks.c: $(srcdir)/emulparams/elf32elmipvxworks.sh \
   $(srcdir)/emulparams/elf32bmip.sh $(srcdir)/emulparams/vxworks.sh \

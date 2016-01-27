@@ -636,6 +636,10 @@ case $basic_machine in
 		basic_machine=m68k-bull
 		os=-sysv3
 		;;
+	ds2)
+		basic_machine=mipsjz4740el-ds2
+		os=-elf
+		;;
 	ebmon29k)
 		basic_machine=a29k-amd
 		os=-ebmon

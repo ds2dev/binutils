@@ -451,6 +451,7 @@ mips*el-*-netbsd*)	targ_emul=elf32ltsmip
 mips*-*-netbsd*)	targ_emul=elf32btsmip
 			targ_extra_emuls="elf32ltsmip elf64btsmip elf64ltsmip"
   			;;
+mips*jz4740el-ds2-elf*)	targ_emul=elf32elmipds2 ;;
 mips*vr4300el-*-elf*)	targ_emul=elf32l4300 ;;
 mips*vr4300-*-elf*)	targ_emul=elf32b4300 ;;
 mips*vr4100el-*-elf*)	targ_emul=elf32l4300 ;;
